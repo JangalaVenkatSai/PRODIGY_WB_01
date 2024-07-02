@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page with Sliding Background</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sliding-pages">
+        <div class="sliding-page" id="slide1">
+            <!-- Content for slide 1 -->
+            <img src="images/slide1.jpg" alt="Slide 1">
+        </div>
+        <div class="sliding-page" id="slide2">
+            <!-- Content for slide 2 -->
+            <img src="images/slide2.jpg" alt="Slide 2">
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Delicious Eats</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="content">
+                <!-- This section will be replaced by sliding images -->
+            </div>
+        </section>
+        <section id="about">
+            <div class="content">
+                <h2>About Us</h2>
+                <p>We offer the finest dishes with a blend of traditional and modern culinary techniques.</p>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/dish1.jpg" alt="Dish 1">
+                    <h3>Paneer Biryani</h3>
+                    <p>A fragrant Indian rice dish cooked with paneer (Indian cottage cheese), aromatic spices, and herbs, available at our restaurant.</p>
+                    <p class="price">Rs.314</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dish2.jpg" alt="Dish 2">
+                    <h3>Chicken Biryani</h3>
+                    <p>Aromatic basmati rice layered with tender chicken pieces, infused with spices and herbs, served at our restaurant.</p>
+                    <p class="price">Rs.362</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dish3.jpg" alt="Dish 3">
+                    <h3>Veg Manchurian</h3>
+                    <p>Crispy vegetable dumplings tossed in a tangy and savory Manchurian sauce, a popular Indo-Chinese dish available at our restaurant.</p>
+                    <p class="price">Rs.286</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dish4.jpg" alt="Dish 4">
+                    <h3>Veg Spring Roll</h3>
+                    <p>Crispy rolls filled with mixed vegetables and served with a dipping sauce, a delightful appetizer at our restaurant.</p>
+                    <p class="price">Rs.250</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dish5.jpg" alt="Dish 5">
+                    <h3>Kaju Fry</h3>
+                    <p>Cashews marinated in spices and fried until golden brown, a flavorful appetizer or side dish at our restaurant.</p>
+                    <p class="price">Rs.400</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Delicious Eats. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

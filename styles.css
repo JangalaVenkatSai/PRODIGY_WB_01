@@ -1,0 +1,231 @@
+/* Reset and basic styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+/* Main content styling */
+main {
+    padding-top: 70px; /* Adjust based on header height */
+    text-align: center;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+
+/* Home section styling */
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Ensures the background image doesn't overflow */
+}
+
+.sliding-pages {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.sliding-page {
+    flex: 1 0 100%;
+}
+
+.sliding-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About section */
+#about {
+    background-color: #f4f4f4;
+}
+
+/* Menu section */
+#menu {
+    padding: 4rem 0;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.menu-item {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 1rem;
+    text-align: left;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-item h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.menu-item p {
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+/* Contact section */
+#contact {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 200px;
+        height: calc(100vh - 60px);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    #menu .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    /* Adjustments for smaller screens */
+    #home {
+        height: 100vh;
+    }
+}
